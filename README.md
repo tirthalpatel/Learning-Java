@@ -1,7 +1,7 @@
 Learning-Java
 =============
 
-For getting my hands dirty with numerous Java programming features
+Sample code snippet of numerous Java programming features
 
 
 CoreJava
@@ -29,7 +29,11 @@ Java7
 ---------
 Code snippet of Java 1.7
 
+TODO - To be added...
+
 
 Java8
 ---------
 Code snippet of Java 1.8
+
+TODO - To be added...
