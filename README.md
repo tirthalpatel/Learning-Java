@@ -1,7 +1,7 @@
 Learning-Java
 =============
 
-Sample code snippet of numerous Java programming features
+Sample code snippet for learning numerous Java programming features
 
 
 CoreJava

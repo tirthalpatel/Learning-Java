@@ -1,0 +1,7 @@
+*** References:
+
+http://www.codeproject.com/Articles/27611/Generics-in-Java-Part-I
+http://www.codeproject.com/Articles/27613/Generics-in-Java-Part-II
+http://www.codeproject.com/Articles/27643/Generics-in-Java-Part-III
+
+http://docs.oracle.com/javase/tutorial/java/generics/index.html
