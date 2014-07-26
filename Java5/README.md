@@ -1,6 +1,14 @@
 Java5
 =====
-This project contains sample code (along with easy to understand comments) to learn Java 5 features.
+This project contains sample code (along with easy to understand comments) to learn Java 5 features. 
+
+Related post is [here] (http://tirthalpatel.blogspot.in/2014/07/java5-new-features-sample-code-snippet.html)
+
+
+How to use?
+------------
+Just import this project in Eclipse as an existing project, do necessary configuration to fix build path errors (e.g. setup JRE 1.5 Libraries).
+
 
 New Language Features in Java 1.5
 ---------------------------------

@@ -1,15 +1,9 @@
 Learning-Java
 =============
 
-Sample code snippet for learning numerous Java programming features
+Sample code snippet for learning numerous Java programming features. 
 
-
-CoreJava
----------
-
-Code snippet of Java 1.4 and previous
-
-TODO - To be added...
+Related post: [Getting started guide, if you are new to Java]! (http://tirthalpatel.blogspot.in/2014/05/new-to-java-getting-started-guide.html)
 
 
 Java5
