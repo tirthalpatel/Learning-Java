@@ -3,7 +3,7 @@ Learning-Java
 
 Sample code snippet for learning numerous Java programming features. 
 
-Related post: [Getting started guide, if you are new to Java]! (http://tirthalpatel.blogspot.in/2014/05/new-to-java-getting-started-guide.html)
+Related post: [Getting started guide, if you are new to Java!] (http://tirthalpatel.blogspot.in/2014/05/new-to-java-getting-started-guide.html)
 
 
 Java5
