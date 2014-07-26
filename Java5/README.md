@@ -2,7 +2,7 @@ Java5
 =====
 This project contains sample code (along with easy to understand comments) to learn Java 5 features. 
 
-Related post is [here] (http://tirthalpatel.blogspot.in/2014/07/java5-new-features-sample-code-snippet.html)
+Related post is [here] (http://tirthalpatel.blogspot.in/2014/07/java5-new-features-sample-code-snippet.html) 
 
 
 How to use?
