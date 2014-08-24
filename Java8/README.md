@@ -10,7 +10,7 @@ Just import this project in Eclipse as an existing project, do necessary configu
 New Language Features in Java 8
 --------------------------------
 * [Lambda Expressions/Closures] (https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/langfeatures/lambda)
-* Default and Static Methods in Interfaces (https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_DefaultStaticMethodsInInterface.java)
+* [Default and Static Methods in Interfaces] (https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_DefaultStaticMethodsInInterface.java)
 * Method References
 * Improved Type Inference in Generics
 * Repeating Annotations
