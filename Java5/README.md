@@ -32,3 +32,8 @@ New Language Features in Java 1.5
 Reference
 ----------
 http://docs.oracle.com/javase/1.5.0/docs/relnotes/features.html
+
+
+Disclaimer
+-----------
+The code snippet are mainly targeted for learning purpose, and not focused for producing production code quality.
