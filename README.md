@@ -31,6 +31,4 @@ TODO - To be added...
 Java8
 ---------
 
-Code snippet of Java 1.8
-
-TODO - To be added...
+[Code snippet of Java 1.8] (https://github.com/tirthalpatel/Learning-Java/tree/master/Java8)
