@@ -14,7 +14,6 @@ import java.util.List;
  */
 public class Ex02_LambdaSyntaxes {
 
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// --------------------
@@ -25,7 +24,7 @@ public class Ex02_LambdaSyntaxes {
 		File dir = new File("D:\\x-temp\\"); // configure some folder path having java and other files
 		File[] javaFiles = dir.listFiles(javaFilter); // pass "javaFilter" (lambda/function) as an argument
 		// for each pathname in pathname array
-        for(File file:javaFiles)
+        for(File file : javaFiles)
         {           
            System.out.println(file);
         }

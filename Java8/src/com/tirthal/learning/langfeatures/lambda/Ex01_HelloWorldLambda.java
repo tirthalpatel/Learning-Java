@@ -41,5 +41,11 @@ public class Ex01_HelloWorldLambda {
 		// With Java 8 Lambda, you don't need to tell method name to compiler explicitly
 		// Using Lambda, compiler would automatically apply input parameters and implementation for single method of interface
 		// Also lines of code is reduced with Lambda
+			
+		// ------------- Effectively final variables can be referenced in lambdas ---------------		
+		String s = "Hello "; // s is effectively final (not changed anywhere)
+		Ex01_HelloWorld hw3 = (String name) -> System.out.println(s + name); // s can be referenced in the lambda
+		
+		hw3.sayHello("Tirthal");				
 	}
 }
