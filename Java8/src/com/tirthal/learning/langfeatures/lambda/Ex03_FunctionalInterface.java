@@ -3,7 +3,7 @@ package com.tirthal.learning.langfeatures.lambda;
 /**
  * This is functional interface (also referred as, single method interface = an interface with only one abstract method)
  * 
- * A functional interface can be annotated using - @FunctionalInterface (Optional). It is just here for convenience, the
+ * <p>A functional interface can be annotated using - @FunctionalInterface (Optional). It is just here for convenience, the
  * compiler can tell us whether the interface is functional or not!
  * 
  * @author tirthalp

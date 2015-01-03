@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * This is example class to demo syntax of using method references in Java 8
  * 
- * Method references (::) - provide the useful syntax to refer directly to exiting methods or constructors of Java
+ * <p>Method references (::) - provide the useful syntax to refer directly to exiting methods or constructors of Java
  * classes or objects (instances). With conjunction of Lambdas expressions, method references make the language
  * constructs look compact and concise, leaving off boilerplate.
  * 

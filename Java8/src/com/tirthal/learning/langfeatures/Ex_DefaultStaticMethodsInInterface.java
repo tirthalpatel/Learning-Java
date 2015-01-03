@@ -36,7 +36,9 @@ public class Ex_DefaultStaticMethodsInInterface {
 
 }
 
-/**
+//Below interface and implementation classes providing syntax demo of default and static methods in Java 8 interfaces!
+
+/*
  * In below code, just imagine that Printer interface having only abstract print() method and is implemented by
  * implementation classes.
  * 
@@ -52,8 +54,6 @@ public class Ex_DefaultStaticMethodsInInterface {
  * Important Note 2 --- In the case of a class implementing multiple interfaces with the same default method signature,
  * the compiler will throw an error to prevent the diamond problem.
  */
-
-// Below interface and implementation classes providing syntax demo of default and static methods in Java 8 interfaces!
 
 interface Printer {
 
