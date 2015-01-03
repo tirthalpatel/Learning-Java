@@ -1,0 +1,57 @@
+Transforming Code to Java 8
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+Paradigm shift:
+-From imperative to functional and declarative
+-What's functional style?
+ -Declarative
+ -Higher Order functions
+ -Honoring immutability
+ -Pure functions
+-Why?
+ -concise
+ -expressive
+ -less code
+ -easier to understand (once we get used to the syntax)
+ -easier to modify
+ -fewer bugs
+ -almost effortless parallelization and efficiencies 
+
+Exercise 1: Deodorizing Inner-classes:
+-Single Abstract Method Interfaces
+-Functional Interfaces
+
+Exercise 2: Streamlining Iterations:
+-External vs. Internal Iterators
+-Specialized functions
+-Function composition
+-Infinite streams
+-Lazy evaluation
+
+Exercise 3: Tell, don't ask:
+-Keep your focus on the whole instead of the part
+-Code is transparent
+-Avoid the smell of null
+-Optional
+
+Exercise 4: You Gotta be Kidding:
+-Simple tasks that haunt us
+-Higher level of abstractions
+
+Exercise 5: Non-intrusive Comparisons:
+-Comparable vs. Comparator
+-Composition of comparators
+
+Exercise 6: Execute Around Method Pattern:
+-Garbage collection
+-Resource clean up
+-ARM
+-Deterministic behavior
+
+Conclusion:
+	
+You can download this topics list and code examples from:
+	http://www.agiledeveloper.com	 - downloads link
