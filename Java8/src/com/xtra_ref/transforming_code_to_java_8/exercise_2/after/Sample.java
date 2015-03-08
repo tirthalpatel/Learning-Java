@@ -10,10 +10,6 @@ import java.util.stream.Stream;
 
 public class Sample {
 		
-	public static boolean isPrime(int number) {
-		return number > 1 && IntStream.range(2, number).noneMatch(index -> number % index == 0);
-	}
-
 	public static void main(String[] args) {
 		List<Double> sqrtOfFirst100Primes = Stream.iterate(1, e -> e + 1)	// Incremental stream iterator starting from number 1
 													.filter(Sample::isPrime)	// Filter prime numbers for further processing 
@@ -23,5 +19,9 @@ public class Sample {
 
 		System.out.println(String.format("Computer %d values, first is %g, last is %g", sqrtOfFirst100Primes.size(),
 				sqrtOfFirst100Primes.get(0), sqrtOfFirst100Primes.get(sqrtOfFirst100Primes.size() - 1)));
+	}
+	
+	public static boolean isPrime(int number) {
+		return number > 1 && IntStream.range(2, number).noneMatch(index -> number % index == 0);
 	}
 }

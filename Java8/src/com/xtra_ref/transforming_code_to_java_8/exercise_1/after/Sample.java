@@ -9,8 +9,9 @@ public class Sample {
 		ExecutorService executorService = Executors.newFixedThreadPool(10);
 
 		// ------------ Java 8 way ----------------------------------
-		IntStream.range(0, 10) // Sequential ordered integer steam range from 0 to 9
-				.forEach(index -> // for each loop
+		// Sequential ordered integer steam range from 0 to 9
+		IntStream.range(0, 10)  
+				.forEach(index -> 
 						executorService.submit(() -> System.out.println("Running task " + index))); // Single Abstract Method Interfaces using Lambda
 		// ---------------------------------------------------------- 
 		
