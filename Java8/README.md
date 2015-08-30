@@ -2,6 +2,9 @@ Java 8
 =======
 This project contains sample code (along with easy to understand comments) to learn Java 8 features and enhancements.
 
+Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java8-highlights-of-new-features-and-enhancements.html)
+
+
 How to use?
 -----------
 Just import this project in Eclipse Luna (or any other version supporting Java 8) as an existing project, do necessary configuration to fix build path errors (e.g. setup JRE 1.8 Libraries).

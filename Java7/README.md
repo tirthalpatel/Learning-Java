@@ -2,6 +2,8 @@ Java7
 =====
 This project contains sample code (along with easy to understand comments) to learn Java 7 features.
 
+Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java7-highlights-of-new-features-and-enhancements.html)
+
 
 How to use?
 ------------

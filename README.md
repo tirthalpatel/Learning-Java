@@ -1,7 +1,7 @@
 Learning-Java
 =============
 
-Sample code snippet for learning numerous Java programming features. 
+Sample code snippet for learning numerous Java programming features.
 
 Related post: [Getting started guide, if you are new to Java!](http://tirthalpatel.blogspot.in/2014/05/new-to-java-getting-started-guide.html)
 
@@ -15,7 +15,7 @@ Java5
 Java6
 ---------
 
-No new language features were introduced in Java SE. 
+No new language features were introduced in Java SE. Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java6-highlights-of-new-features-and-enhancements.html)
 
 
 Java7
