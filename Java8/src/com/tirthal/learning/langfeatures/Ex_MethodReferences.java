@@ -49,7 +49,8 @@ public class Ex_MethodReferences {
 		 */
 		Arrays.sort(stringArray, myComparisonProvider::dontCompare);
 		// equivalent to
-
+		Arrays.sort(stringArray, (String a, String b) -> myComparisonProvider.dontCompare(a, b));
+		
 		System.out.println(Arrays.toString(stringArray));
 
 		
