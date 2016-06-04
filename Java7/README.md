@@ -7,7 +7,7 @@ Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java7-highlights-
 
 How to use?
 ------------
-Just import this project in Eclipse as an existing project, do necessary configuration to fix build path errors (e.g. setup JRE 1.7 Libraries).
+Just import this project in Eclipse as an "Existing Maven Project". If require, do necessary configuration to fix build path errors (e.g. setup JRE 1.7 Libraries).
 
 
 New Language Features in Java 1.7
