@@ -6,7 +6,7 @@ Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java8-highlights-
 
 ## How to use?
 
-Just import this project in Eclipse Luna (or any other version supporting Java 8) as an existing project, do necessary configuration to fix build path errors (e.g. setup JRE 1.8 Libraries).
+Just import this project in Eclipse Luna (or any other version supporting Java 8) as an "Existing Maven Project". If require, do necessary configuration to fix build path errors (e.g. setup JRE 1.8 Libraries).
 
 
 ## New Language Features
