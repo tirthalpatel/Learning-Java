@@ -1,8 +1,7 @@
-Lambda Expressions/Closures
-===========================
+# Lambda Expressions/Closures
 
-What is Lambda?
---------------
+## What is Lambda?
+
 * Lambda expressions let you express instances of single-method classes more compactly. 
 * Lambda is just another way of writing instances of anonymous classes to make them easier to write and read! 
 * A Lambda, in general, is a function that expects and accepts input parameters and produce output results. So lambda can be put in a variable; and it can be taken as a method parameter, and can be returned by a method.
@@ -14,16 +13,15 @@ What is Lambda?
 	- (argument1, argument2...) -> { body }; // more than one input parameter and more than one line of code in body
 
 
-UNDERSTAND LAMBDA BY EXAMPLES
------------------------------
-* [What is purpose of Lambda by Hello World?] (https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex01_HelloWorldLambda.java)
-* [Understanding Syntaxes of writing Lambda Expression] (https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex02_LambdaSyntaxes.java)
-* [Usage of new @FunctionalInterface annotation] (https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex03_FunctionalInterface.java)
+## Understand Lambda by Examples
+
+* [What is purpose of Lambda by Hello World?](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex01_HelloWorldLambda.java)
+* [Understanding Syntaxes of writing Lambda Expression](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex02_LambdaSyntaxes.java)
+* [Usage of new @FunctionalInterface annotation](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex03_FunctionalInterface.java)
 
 
+## Further References
 
-Further References
-------------------
 * http://www.oracle.com/technetwork/articles/java/lambda-1984522.html
 * http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 * https://github.com/AdoptOpenJDK/lambda-tutorial

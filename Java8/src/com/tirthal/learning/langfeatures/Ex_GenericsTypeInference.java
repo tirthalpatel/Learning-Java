@@ -12,7 +12,7 @@ import java.util.Map;
  * determine the type argument (or arguments) that make the invocation applicable.
  * 
  * <p>
- * Java 5 introduced Generics followed by Type Inference using diamon operator in Java 7. Further, Java 8 has improved
+ * Java 5 introduced Generics followed by Type Inference using diamond operator in Java 7. Further, Java 8 has improved
  * type inference in Generics for target type.
  * 
  * @author tirthalp

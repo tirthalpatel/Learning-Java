@@ -8,7 +8,6 @@ Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java8-highlights-
 
 Just import this project in Eclipse Luna (or any other version supporting Java 8) as an "Existing Maven Project". If require, do necessary configuration to fix build path errors (e.g. setup JRE 1.8 Libraries).
 
-
 ## New Language Features
 * [Lambda Expressions/Closures](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/langfeatures/lambda)
 * [Default and Static Methods in Interfaces](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_DefaultStaticMethodsInInterface.java)
@@ -16,12 +15,6 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 * [Improved Type Inference in Generics](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_GenericsTypeInference.java)
 * Type Annotations : see [reference-1](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_TypeAnnotations.java), [reference-2](https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type)
 * Repeating Annotations : see [reference-1](https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html)
-
-
-## New Features in Java compiler
-* [Method Parameter Reflection via "-parameter" option](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_MethodParameterReflection.java)
-* [Compact Profiles via "-profile" option](http://docs.oracle.com/javase/8/docs/technotes/guides/compactprofiles/) - Enable reduced memory footprint for applications that do not require the entire Java platform
-
 
 ## New Features in Java libraries
 * Collection framework enhancements & Stream API
@@ -32,6 +25,9 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 * Other Bits and Pieces
 	- Java FX 8
 
+## New Features in Java compiler
+* [Method Parameter Reflection via "-parameter" option](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_MethodParameterReflection.java)
+* [Compact Profiles via "-profile" option](http://docs.oracle.com/javase/8/docs/technotes/guides/compactprofiles/) - Enable reduced memory footprint for applications that do not require the entire Java platform
 
 ## References:
 * [Java 8 Features Tutorial – The Ultimate Guide by Andrey Redko](http://www.javacodegeeks.com/2014/05/java-8-features-tutorial.html)
