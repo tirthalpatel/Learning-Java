@@ -9,7 +9,7 @@ Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java8-highlights-
 Just import this project in Eclipse Luna (or any other version supporting Java 8) as an "Existing Maven Project". If require, do necessary configuration to fix build path errors (e.g. setup JRE 1.8 Libraries).
 
 ## New Language Features
-* [Lambda Expressions/Closures](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/langfeatures/lambda)
+* [Lambda Expressions/Closures](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/langfeatures/lambda) : specifically supporting the ability to define and pass method (or function) references within application code
 * [Default and Static Methods in Interfaces](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_DefaultStaticMethodsInInterface.java)
 * [Method References](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_MethodReferences.java)
 * [Improved Type Inference in Generics](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_GenericsTypeInference.java)
@@ -18,7 +18,7 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 
 ## New Features in Java libraries
 * Collection framework enhancements & Stream API
-	- [java.util.stream](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream): A new package that contains the majority of interfaces and classes that provide functionality to streams and aggregate operations
+	- [java.util.stream](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream): A new package that contains classes to support functional-style operations on streams of elements, such as map-reduce transformations on collections
 	- [java.util.function](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/util/function): A new package that contains general purpose functional interfaces that provide target types for lambda expressions and method references
 * Date and Time API
 * [Nashorn JavaScript Engine](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/nashorn)
