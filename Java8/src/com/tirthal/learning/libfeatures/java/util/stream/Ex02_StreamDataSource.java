@@ -21,7 +21,7 @@ public class Ex02_StreamDataSource {
 
 	public static void main(String[] args) {
 		
-		// From a Collection via the stream()		
+		// From a Collection via the stream() and parallelStream() methods		
 		List<String> colorsList = Arrays.asList("red", "blue", "black");		
 		colorsList.stream().forEach(e -> System.out.println("Color:" + e));
 		colorsList.parallelStream().forEach(e -> System.out.println("Color:" + e));
