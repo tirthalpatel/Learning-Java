@@ -12,16 +12,16 @@ This project contains sample code snippet for getting hands dirty with RxJava (a
 ## Learnings 
 
 * Functional Reactive Concepts
-	* [Functional Programming Concepts](https://github.com/tirthalpatel/Learning-Java/tree/master/RP-J8-RxJava/src/com/tirthal/learning/concepts) - Pure Functions, Functions as a First Class Citizen, High Order Functions.
+	* [Functional Programming Concepts](https://github.com/tirthalpatel/Learning-Java/tree/master/RP-J8-RxJava/src/main/java/com/tirthal/learning/concepts) - Pure Functions, Functions as a First Class Citizen, High Order Functions.
 	* [The Reactive Manifesto](http://www.reactivemanifesto.org/) - Reactive systems are: Message Driven, Scalable, Resilient, Responsive.
 	* [Rx Marbles](http://rxmarbles.com/) - Interactive diagrams of Rx Observables.
 	
 * RxJava examples
-	* ABC of [Obeservable](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex01_ObservableBasic.java) and [Observer](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex01_ObserverBasic.java)
-	* Understanding [Observable's non-blocking vs. blocking behavior](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex02_BlockingObservable.java)
-	* [Error handling](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex03_ErrorHandling.java.java)
-	* Play with few [RxJava Operators](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex04_Operators.java) / [ReactiveX operators](http://reactivex.io/documentation/operators.html#categorized)
-	* Usage of [Subject](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex05_SubjectTypes.java)
+	* ABC of [Obeservable](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/main/java/com/tirthal/learning/rxjava/Ex01_ObservableBasic.java) and [Observer](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/com/tirthal/learning/rxjava/Ex01_ObserverBasic.java)
+	* Understanding [Observable's non-blocking vs. blocking behavior](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/main/java/com/tirthal/learning/rxjava/Ex02_BlockingObservable.java)
+	* [Error handling](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/main/java/com/tirthal/learning/rxjava/Ex03_ErrorHandling.java.java)
+	* Play with few [RxJava Operators](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/main/java/com/tirthal/learning/rxjava/Ex04_Operators.java) / [ReactiveX operators](http://reactivex.io/documentation/operators.html#categorized)
+	* Usage of [Subject](https://github.com/tirthalpatel/Learning-Java/blob/master/RP-J8-RxJava/src/main/java/com/tirthal/learning/rxjava/Ex05_SubjectTypes.java)
 	
 ## Also See
 
