@@ -21,6 +21,9 @@ import java.util.stream.Collectors;
  * worthwhile to take advantage of parallel stream support. In fact, this is arguably a bigger advantage of the Streams
  * API than the elimination of boilerplate code: it allows Java applications to easily provide better support for “big
  * data” applications than would be possible otherwise. (Reference: Page 92 of Java 8 Pro Programming 3rd Edition Book)
+ * 
+ * All in all, use parallel streams, when (1) problem on hand is actually parallelizable (2) willing to spend lot more
+ * resources to get faster answer (3) data size or task computation is bit enough to get benefit in performance.
  * </p>
  * 
  * @author tirthalp
