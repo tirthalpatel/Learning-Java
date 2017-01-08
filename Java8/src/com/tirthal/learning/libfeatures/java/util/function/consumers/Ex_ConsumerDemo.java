@@ -1,4 +1,4 @@
-package com.tirthal.learning.libfeatures.java.util.function;
+package com.tirthal.learning.libfeatures.java.util.function.consumers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,6 +28,8 @@ public class Ex_ConsumerDemo {
 		// Above line is equivalent to this short syntax --- Consumer<String> onlyPrinting = System.out::println;
 
 		// See Consumer usage in action
+		onlyPrinting.accept("Hello World");
+		
 		colors.forEach(onlyPrinting); // Performs the given action for each element of the list
 
 		// ---> Example 2
