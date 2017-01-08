@@ -26,8 +26,8 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 * [The Date-Time API](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/time) : New set of java.time packages that provide a comprehensive date-time model 
 * [Nashorn](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/nashorn) : A JavaScript Engine on the JVM
 * Other Bits and Pieces
-	- [Optional](https://github.com/tirthalpatel/Learning-Java/tree/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/other/OptionalDemo.java) : A container object which may or may not contain a non-null value
-	- [StringJoiner](https://github.com/tirthalpatel/Learning-Java/tree/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/other/StringJoinerDemo.java) : Used to construct a sequence of characters separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix
+	- [Optional](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/other/OptionalDemo.java) : A container object which may or may not contain a non-null value
+	- [StringJoiner](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/other/StringJoinerDemo.java) : Used to construct a sequence of characters separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix
 	- [I/O Enhancements](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/other/IOEnhancementsDemo.java) : New methods added (like list, walk, lines) in java.nio.file.Files to return Stream of elements
 
 ## New Features in Java compiler
