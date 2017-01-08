@@ -2,6 +2,7 @@ package com.tirthal.learning.libfeatures.java.util.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -19,6 +20,8 @@ import java.util.stream.Stream;
  */
 public class Ex02_StreamDataSource {
 
+	// How to build Streams?
+	
 	public static void main(String[] args) {
 		
 		// From a Collection via the stream() and parallelStream() methods		
@@ -33,6 +36,22 @@ public class Ex02_StreamDataSource {
 		Stream.of("english", "french", "hindi").forEach(e -> System.out.println("Language:" + e));
 		
 		IntStream.range(1, 6).forEach(e -> System.out.println("Number:" + e));				
+		
+		// Using iterate pattern
+		Stream.iterate("+", s -> s + "+").limit(5).forEach(System.out::println);
+		
+		// Usage of StreamBuilder pattern
+		Stream.Builder<String> builder = Stream.builder();
+		builder.add("one").add("two").add("three");
+		builder.accept("four");	
+		builder.build().forEach(System.out::println);
+		
+		// A constant stream
+		Stream.generate(() -> "Hello World!!!") 
+			  .limit(10)						// Removing limit() will generate constant stream
+			  .forEach(System.out::println);
+		
+		// Stream of any 5 random numbers between 1 to 1000000
+		ThreadLocalRandom.current().ints(5, 1, 1000000).forEach(System.out::println);				
 	}
-
 }

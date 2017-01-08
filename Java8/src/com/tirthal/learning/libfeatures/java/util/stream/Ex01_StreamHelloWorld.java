@@ -1,6 +1,7 @@
 package com.tirthal.learning.libfeatures.java.util.stream;
 
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -14,7 +15,8 @@ public class Ex01_StreamHelloWorld {
 
 	public static void main(String[] args) {
 		
-		// ---> There are different ways to obtain stream - Trying static factory method of the Stream class				
+		// ---> There are different ways to obtain stream - Trying static factory method of the Stream class	
+		
 		Stream<String> hwStream = Stream.of("one", "two", "hello", "three", "world", "four");
 		
 		System.out.println("Original Stream - " + hwStream);
@@ -26,6 +28,7 @@ public class Ex01_StreamHelloWorld {
 		System.out.println("Hello World Filtered List" + hwFilteredList);
 		
 		// ---> Again filtering using a multi-stage pipe
+		
 		List<String> numbersFilteredList = Stream.of("one", "two", "hello", "three", "world", "four"). // an example of a data source
 				filter(e -> (!e.equalsIgnoreCase("hello"))). // an example of an intermediate operation
 				filter(e -> (!e.equalsIgnoreCase("World"))). // an example of an intermediate operation
@@ -47,11 +50,19 @@ public class Ex01_StreamHelloWorld {
 		System.out.println(result);
 		
 		// Java 8 way of expressive code using Function Composition (calling series of functions)
+		// map / filter / reduce example
 		result = numbers.stream()
-					    .filter(e -> e % 2 == 0)
-					    .mapToInt(e -> e * 3)
+				        .mapToInt(e -> e * 3)
+					    .filter(e -> e % 2 == 0)					    
 					    .sum();		
 		System.out.println(result);
+		
+		// ---> Usage of IntStream & IntSummaryStatistics
+		
+		IntSummaryStatistics iss = numbers.stream()				
+										  .mapToInt(i -> i) 	// Stream<Integer> to IntStream (the int primitive specialization of Stream)
+										  .summaryStatistics(); // A state object for collecting statistics such as count, min, max, sum, and average
+		System.out.println(iss);
 	}
 
 }

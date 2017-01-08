@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.LongAdder;
  * 
  * @author tirthalp
  */
-public class Ex05_TipAvoidLoops {
+public class Ex06_TipAvoidLoops {
 
 	private static final File README_FILE = Paths.get(".\\README.md").toFile();
 	

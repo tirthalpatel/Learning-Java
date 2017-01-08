@@ -7,6 +7,14 @@ import java.util.List;
 /**
  * Example code to understand Intermediary and Terminal Operations on a Stream
  * 
+ * <p>
+ * How to recognize a intermediate vs. terminal call? - See Javadoc.
+ * <ul>
+ * <li>If a call returns a Stream, it's an intermediate call such as peek(), skip(), limit(), etc.</li>
+ * <li>If a call returns something else, or void is a terminal call that triggers the processing such as match(), find(), count(), reduce(), etc.</li>
+ * </ul>
+ * </p>
+ * 
  * @author tirthalp
  */
 public class Ex03_IntermediaryVsTerminalOp {
@@ -19,10 +27,10 @@ public class Ex03_IntermediaryVsTerminalOp {
 		List<Integer> adultFilteredAgeList = new ArrayList<>(); 
 		
 		System.out.print("Input age values =");
-		ageList.stream().
-				peek(e -> System.out.print(" " + e)).
-				filter(e -> e > 18).
-				peek(adultFilteredAgeList::add);
+		ageList.stream()
+			   .peek(e -> System.out.print(" " + e)) // Intermediate operation, which returns Stream<Integer>
+			   .filter(e -> e > 18)
+			   .peek(adultFilteredAgeList::add);
 	
 		System.out.println("\n" + "Applying Intermediary operations without Terminal Operation - Filtered adult age list =" + adultFilteredAgeList + "\n");
 		
@@ -37,16 +45,23 @@ public class Ex03_IntermediaryVsTerminalOp {
 		List<Integer> adultFilteredAgeList = new ArrayList<>(); 
 		
 		System.out.print("Input age values =");
-		ageList.stream().
-				peek(e -> System.out.print(" " + e)).
-				filter(e -> e >= 18).
-				forEach(adultFilteredAgeList::add);
+		ageList.stream()
+				.peek(e -> System.out.print(" " + e))
+				.filter(e -> e >= 18)
+				.forEach(adultFilteredAgeList::add); // Terminal operation, which has void return type
 			
 		System.out.println("\n" + "Applying Intermediary operations without Terminal Operation - Filtered adult age list =" + adultFilteredAgeList + "\n");
 		
 		// Did you see? --->  The above code does its job! Printing input data and adding filtered values to adultFilteredAgeList list...
 		// Because only final operation triggers the processing of data the stream is connected to, i.e. forEach() in above code
 		// Be aware, only one terminal operation can be specified per stream
+		
+		// ---> Few more examples of Terminal operations
+		System.out.println("Is there any age greater than 80? : " + ageList.stream().anyMatch(age -> age > 80));
+		System.out.println("Is there any age greater than 60? : " + ageList.stream().anyMatch(age -> age > 60));		
+		System.out.println("What's first age in list? : " + ageList.stream().findFirst().get());
+		System.out.println("What's total count of elements in list? : " + ageList.stream().count());
+		System.out.println("What's sum of all ages in list? : " + ageList.stream().reduce(0, (age1, age2) -> age1 + age2));
 	}
 	
 	// Try it

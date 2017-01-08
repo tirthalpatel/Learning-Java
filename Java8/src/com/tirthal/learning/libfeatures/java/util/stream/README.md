@@ -11,7 +11,7 @@ Classes to support functional-style operations on streams of elements, such as m
 
 * What is Stream in Java?	
 	- An object on which one can define operations, i.e. map, filter, reduce
-	- An object that does not hold any data
+	- An object that does not hold any data, rather it pulls data it processes from a source
 	- An object that should not change the data it processes (compiler/jvm does not enforce for this, but this guideline must be followed for any custom stream implementation)	
 	- An object optimized from the algorithm point of view, and able to process data in parallel
 	- Actually not a physical object with data unlike list or set, rather just an abstraction containing bunch of functions (non mutating pipeline)
@@ -24,7 +24,7 @@ Classes to support functional-style operations on streams of elements, such as m
 * Tips
 	- For functional programming, should not modify state
 	- Avoid loops in streams
-	- Be careful with parallel streams
+	- Be careful with parallel streams, For example, use parallel streams with Stateless operations (filter, map...) and don't use with Stateful operations (limit, skip, sort...)
 
 ## Sample Code
 
@@ -32,7 +32,9 @@ Classes to support functional-style operations on streams of elements, such as m
 * [Understanding Stream Data Source](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex02_StreamDataSource.java)
 * [Understanding Intermediary and Terminal Operations on a Stream](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex03_IntermediaryVsTerminalOp.java)
 * [Fundamentals of Parallel Stream](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex04_ParallelStream.java)
-* [Tip: Avoid loops](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex05_TipAvoidLoops.java)
+* [Usage of Collector as a special type of Reduction](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex05_CollectorUsage.java)
+* [Tip: Avoid loops](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex06_TipAvoidLoops.java)
+* [Understanding Spliterator Pattern](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream/Ex07_SpliteratorPattern.java)
 
 ## Further References
 
