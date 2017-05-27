@@ -30,7 +30,7 @@ public class Ex02_Comparator {
 			}
 		};		
 		Collections.sort(persons, cmpByAge);		
-		System.out.println(persons);
+		System.out.println("Before Java 8 - sort by age:"+persons);
 		
 		// Sort by first name
 		Comparator<Person> cmpByFirstName = new Comparator<Person>() {
@@ -42,7 +42,7 @@ public class Ex02_Comparator {
 			}
 		};		
 		Collections.sort(persons, cmpByFirstName);		
-		System.out.println(persons);
+		System.out.println("Before Java 8 - sort by first name:"+persons);
 	}
 	
 	private static void java8way(List<Person> persons) {
@@ -52,23 +52,23 @@ public class Ex02_Comparator {
 		// Sort by age	
 		Comparator<Person> cmpByAge = (p1, p2) -> { return p1.getAge() - p2.getAge(); };
 		Collections.sort(persons, cmpByAge);		
-		System.out.println(persons);
+		System.out.println("Java 8 way - sort by age: "+persons);
 
 		// Sort by first name
 		Comparator<Person> cmpByFirstName = (p1, p2) -> { return p1.getFirstName().compareTo(p2.getFirstName()); };
 		Collections.sort(persons, cmpByFirstName);		
-		System.out.println(persons);
+		System.out.println("Java 8 way - sort by first name: "+persons);
 		
 		// ---> STEP 3: Further code improvement possible?
 		
 		// Yes, using Function 		
 		Function<Person, Integer> f = p -> p.getAge(); 
 		Collections.sort(persons, Comparator.comparing(f));
-		System.out.println(persons);
+		System.out.println("Java 8 way of using function - sort by age: "+persons);
 		
 		// Rather, static method reference syntax looks awesome
 		Collections.sort(persons, Comparator.comparing(Person::getFirstName));
-		System.out.println(persons);
+		System.out.println("Java 8 way of using static method reference - sort by first name: "+persons);
 		
 		// --->  How to compare by age followed by first name followed by last name?
 		
@@ -77,6 +77,6 @@ public class Ex02_Comparator {
 		Collections.sort(persons, Comparator.comparing(Person::getAge)
 											.thenComparing(Person::getFirstName)
 											.thenComparing(Person::getLastName)); // chaining pattern 
-		System.out.println(persons);
+		System.out.println("Java 8 way of using chaining pattern in Comparator - sort by age, first name and last name: "+persons);
 	}		
 }

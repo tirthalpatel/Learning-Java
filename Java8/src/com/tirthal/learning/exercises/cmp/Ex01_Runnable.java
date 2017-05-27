@@ -22,7 +22,7 @@ public class Ex01_Runnable {
 			@Override
 			public void run() {				
 				for(int i=1; i<=5; i++) {
-					System.out.println("Counter: " + i);
+					System.out.printf("Thread: %s,Counter: %d \n", Thread.currentThread().getName(), i);
 				}
 			}
 		};
@@ -33,7 +33,7 @@ public class Ex01_Runnable {
 	private static void java8way() {
 		Runnable r = () -> {
 			IntStream.range(1, 6)
-					 .forEach(e -> System.out.println("Counter: " + e));
+					 .forEach(e -> System.out.printf("Thread: %s,Counter: %d \n", Thread.currentThread().getName(), e));
 		};	
 		
 		Executors.newSingleThreadExecutor().execute(r);

@@ -63,8 +63,8 @@ public class Ex05_CollectorUsage {
 		// ---> Getting non-duplicate words separated by ":"
 		String wordsByComma = outputNonEmptyWords.stream()
 												 .distinct()
-												 .collect(Collectors.joining(" ; "));
-		System.out.println("Words separated by comma: " + wordsByComma);
+												 .collect(Collectors.joining(" : "));
+		System.out.println("Words separated by colon: " + wordsByComma);
 		
 		// ---> Collecting words in Set (distinct data, no duplicate)
    		Set<String> wordsSet = outputNonEmptyWords.stream()
@@ -133,7 +133,7 @@ public class Ex05_CollectorUsage {
    		// ---> Grouping, mapping and collecting in a TreeSet
    		// Map<Length, TreeSet of distinct and ordered words in upper case for the given length>
    		Map<Integer, TreeSet<String>> uppercaseDistinctOrderedWordsBySizeMap = outputNonEmptyWords.stream()
-																								.collect(
+																								  .collect(
 																										Collectors.groupingBy(
 																												String::length, 
 																												Collectors.mapping(
@@ -141,7 +141,7 @@ public class Ex05_CollectorUsage {
 																														Collectors.toCollection(() -> new TreeSet<>())
 																												)
 																										)   																						
-																								);
+																								  );
    		System.out.println("Map containing distinct and ordered words in uppercase grouping by length: " + uppercaseDistinctOrderedWordsBySizeMap);
    		
    	    // TreeMap<Length, TreeSet of distinct and ordered words in upper case for the given length>

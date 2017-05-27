@@ -52,8 +52,8 @@ public class Ex01_StreamHelloWorld {
 		// Java 8 way of expressive code using Function Composition (calling series of functions)
 		// map / filter / reduce example
 		result = numbers.stream()
-				        .mapToInt(e -> e * 3)
-					    .filter(e -> e % 2 == 0)					    
+						.filter(e -> e % 2 == 0)		
+				        .mapToInt(e -> e * 3)					    			   
 					    .sum();		
 		System.out.println(result);
 		
