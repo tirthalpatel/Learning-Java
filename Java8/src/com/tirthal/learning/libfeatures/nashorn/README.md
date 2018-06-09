@@ -1,5 +1,11 @@
 # Nashorn = A JavaScript Engine on the JVM
 
+* Java 6 : added JSR-223 spec to support multiple scripting languages (e.g. JavaScript, Groovy..)
+
+* Java 7 : JDKs shipped with a JavaScript scripting engine based on Mozilla Rhino
+
+* Java 8 : Replaced JavaScript Engine “Mozilla Rhino” with a new engine called “Oracle Nashorn” to offer better runtime performance
+
 ## Invoking Nashorn from the Command Line
 
 - jjs = The Nashorn REPL (Read, Evaluate, Print Loop)

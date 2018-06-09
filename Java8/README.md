@@ -14,7 +14,7 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 * [Default and Static Methods in Interfaces](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_DefaultStaticMethodsInInterface.java)
 * [Method References](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_MethodReferences.java)
 * [Improved Type Inference in Generics](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_GenericsTypeInference.java)
-* Type Annotations : see [reference-1](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/Ex_TypeAnnotations.java), [reference-2](https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type)
+* Type Annotations : see [reference-1](https://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html), [reference-2](https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type)
 * Repeating Annotations : see [reference-1](https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html)
 
 ## New Features in Java libraries
@@ -23,7 +23,8 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 	- [java.util.function](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/util/function) : A new package that contains general purpose functional interfaces that provide target types for lambda expressions and method references	
 	- [java.util.stream](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/util/stream) : A new package that contains classes to support functional-style operations on streams of elements, such as map-reduce transformations on collections
 	- [collection framework enhancements](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/util/cf) : The Java Collections Framework has been updated to support lambda expressions, streams, and aggregate operations	
-* [The Date-Time API](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/time) : New set of java.time packages that provide a comprehensive date-time model 
+* [Concurrency Enhancements](https://docs.oracle.com/javase/8/docs/technotes/guides/concurrency/changes8.html): New classes and interfaces in java.util.concurrent; New methods in java.util.concurrent.ConcurrentHashMap; New classes in java.util.concurrent.atomic.
+* [The Date-Time API](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/time) : New set of java.time packages that provide a comprehensive date-time model [see](http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html
 * [Nashorn](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/nashorn) : A JavaScript Engine on the JVM
 * Other Bits and Pieces
 	- [Optional](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/libfeatures/java/other/OptionalDemo.java) : A container object which may or may not contain a non-null value
@@ -38,6 +39,11 @@ Just import this project in Eclipse Luna (or any other version supporting Java 8
 ## Practice Code
 
 * [Comparison of before Java 8 vs. from Java 8 way of coding](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/exercises/cmp)
+
+## Effective Java Tips and Unit Test Code
+
+* [Effective Java Tips](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/src/com/tirthal/learning/tips)
+* [JUnit Implementation](https://github.com/tirthalpatel/Learning-Java/tree/master/Java8/test/com/tirthal/learning/tips)
 
 ## References
 
