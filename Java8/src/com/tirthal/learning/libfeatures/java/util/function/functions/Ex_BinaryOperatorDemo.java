@@ -31,12 +31,15 @@ public class Ex_BinaryOperatorDemo {
 	}
 	
 	public static void main(String[] args) {		
-		// Try it
-		System.out.printf("%d + %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_ADD));
-		System.out.printf("%d - %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_SUBSTRACT));
-		System.out.printf("%d * %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_MULTIPLY));
-		System.out.printf("%d / %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_DEVIDE));
-		
-		System.out.printf("Oops, null arguments are not allowed", calculate(null, null, null));
+		try {
+			System.out.printf("%d + %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_ADD));
+			System.out.printf("%d - %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_SUBSTRACT));
+			System.out.printf("%d * %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_MULTIPLY));
+			System.out.printf("%d / %d = %d \n", 15, 3, calculate(15, 3, Ex_BinaryOperatorDemo.F_DEVIDE));
+
+			calculate(null, null, null);
+		} catch (NullPointerException e) {
+			System.out.print("Oops, null arguments are not allowed");
+		}
 	}
 }

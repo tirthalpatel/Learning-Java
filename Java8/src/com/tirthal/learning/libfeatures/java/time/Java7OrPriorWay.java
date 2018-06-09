@@ -6,6 +6,14 @@ import java.util.Date;
 /**
  * Sample code of the java.util.Date API in Java 7 or Prior = Legacy API
  * 
+ * Existing classes (e.g. java.util.Date and SimpleDateFormatter) are mutable - not thread-safe and can lead to
+ * potential concurrency issues.
+ * 
+ * Some of the date and time classes also exhibit quite poor API design. For example, years in java.util.Date start at
+ * 1900, months start at 1, and days start at 0—not very intuitive.
+ * 
+ * These issues have led to the popularity of third-party date and time libraries, such as Joda-Time.
+ * 
  * @author tirthalp
  */
 public class Java7OrPriorWay {
@@ -20,7 +28,7 @@ public class Java7OrPriorWay {
 
 		// How to create a date for 2016 / 08 / 06?
 		Calendar cal = Calendar.getInstance(); 	// just now
-		cal.set(2016, 07, 06);				 	// January is 0		
+		cal.set(2016, 07, 06);				 	// January is 0, so August is 07 - example of poor design	
 		Date aug6th2016 = cal.getTime();
 		System.out.println(aug6th2016);
 		

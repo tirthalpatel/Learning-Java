@@ -31,6 +31,7 @@ public class Ex04_DelayedExecution {
 		 * Pass a description of how to create the log message, not the actual message
 		 * If the logger doesn't need the value, it doesn't invoke the Lambda
 		 */
+		// TODO: Change below to info level and see the result
 		_log.finest(() -> getSomeStatusData()); 
 		
 		System.out.println("(3) End of program: " + LocalTime.now().toString());

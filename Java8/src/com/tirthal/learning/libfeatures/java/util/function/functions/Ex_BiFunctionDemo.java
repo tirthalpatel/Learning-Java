@@ -17,27 +17,17 @@ import java.util.stream.Collectors;
 */
 public class Ex_BiFunctionDemo {
 
-	public static void main(String[] args) {		
+	// Take List of String and Integer number, return another List String 		
+	public static BiFunction<List<String>, Integer, List<String>> strBooster = (strList, echoFactor) -> {
+				
+		Objects.requireNonNull(strList);
+		Objects.requireNonNull(echoFactor);
 		
-		// Take List of String and Integer number, return another List String 		
-		BiFunction<List<String>, Integer, List<String>> strBooster = (numbersList, echoFactor) -> {
-			
-			Objects.requireNonNull(numbersList);
-			Objects.requireNonNull(echoFactor);
-			
-			List<String> l = numbersList.stream()
-										  // Tip: Always better to move Lambda's in-line logic into separate method 
-									     .map(s -> Ex_BiFunctionDemo.repeater(s, echoFactor)) 
-										 .collect(Collectors.toList());
-			return l;						
-		};				
-		
-		// Try it				
-		List<String> l = strBooster.apply(Arrays.asList("Hi", "Hello", "Ola"), 3);
-		System.out.println(l);
-		
-		System.out.println(strBooster.apply(null, null)); // Oops, null not allowed
-	}
+		List<String> l = strList.stream()									   								
+								.map(s -> repeater(s, echoFactor))
+								.collect(Collectors.toList());
+		return l;						
+	};
 	
 	// Repeat each String from input List by given number of times
 	private static String repeater(String input, Integer count) {
@@ -47,4 +37,15 @@ public class Ex_BiFunctionDemo {
 			sb.append(input + " ");
 		return sb.toString();
 	}
+		
+	public static void main(String[] args) {											
+		try {
+			List<String> l = strBooster.apply(Arrays.asList("Hi", "Hello", "Ola"), 3);
+			System.out.println(l);
+
+			System.out.println(strBooster.apply(null, null)); // Oops, null not allowed
+		} catch (NullPointerException e) {
+			System.out.print("Oops, null arguments are not allowed");
+		}
+	}	
 }

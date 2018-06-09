@@ -17,15 +17,30 @@ import java.util.Date;
 /**
  * Understanding usage of the new java.time package APIs in Java 8
  * 
+ * Provides excellent support for the international ISO 8601 time standard that global businesses use and also supports
+ * the frequently used Japanese, Minguo, Hijrah, and Thai Buddhist calendars.
+ * 
+ * Introduces a new java.time API with a fluent and familiar style that is easy to read and write.
+ * 
+ * Each of the new classes—for date, time, date and time combined, time zones, instants, duration, and clocks—has a
+ * specific purpose and has explicitly defined behavior without side effects. New domain-driven design concepts such as:
+ * 		- An Instant: is a point on time line 
+ * 		- Duration: is amount of time between two instant 
+ * 		- Period: is amount of time between two LocalDate 
+ * 		- DateAdjuster and TemporalAdjusters: are useful to add or subtract amount of time to an Instant or LocalDate.
+ * 
+ * Immutable classes to simplify concurrency issues when used in multitasking environments.
+ * 
  * @author tirthalp
  */
 public class Java8Way {
 
-	// Do you know? - Most these new classes of immutable like Instant, Duration, LocalDate, etc.
+	// Do you know? - Most these new classes are immutable like Instant, Duration, LocalDate, etc.
 	
 	public static void main(String[] args) throws InterruptedException {
 		
 		// New Concept: An Instant, which is a point on time line
+		// Instant 0 is the January the 1st, 1970 at midnight GMT
 		Instant start = Instant.now();	
 		Thread.sleep(1000); // some long computation
 		Instant end = Instant.now();
@@ -68,8 +83,8 @@ public class Java8Way {
 												 DateTimeFormatter.RFC_1123_DATE_TIME.format(nextMeetingUS));
 		
 		// How to interoperate between Legacy & new Java 8 Date Time API?		
-		Date date = Date.from(Instant.now()); 	// API -> Legacy
-		Instant instant = date.toInstant();		// Legacy -> new API
+		Date date = Date.from(Instant.now()); 	// New Java 8 API -> Legacy
+		Instant instant = date.toInstant();		// Legacy -> New Java 8 API
 		System.out.println(date + " <-> " + instant);
 	}
 

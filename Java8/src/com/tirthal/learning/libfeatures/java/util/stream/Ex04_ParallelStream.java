@@ -37,8 +37,8 @@ public class Ex04_ParallelStream {
 	 * Important Tips:
 	 *  
 	 * (1) Use parallel streams with Stateless operations (filter, map...)
-	 * 		- Stateful operations (limit, skip, sort...) should not be used in parallel, b'cas it will kill performance! 
-	 * 		- How to find Stateful vs. Stateless operations? It's written in the Javadoc
+	 * 		- Stateful operations (limit, skip, sort and distinct) should not be used in parallel, b'cas it will kill performance! 
+	 * 		- How to find Stateful operations? It's written in the Javadoc
 	 * 
 	 * (2) Parallel reductions: use collectors instead of reduce(), b'cas it will handle parallelism and thread-safety
 	 */
@@ -97,7 +97,7 @@ public class Ex04_ParallelStream {
 		
 		// Pattern 2: Using parallel() on an existing stream
 		List<String> filteredDecoratedWords2 = words.stream()													
-													.parallel()
+													.parallel()													
 													.unordered()											// set the ORDERED bit to 0
 													.filter(e -> (e.startsWith("a") || e.startsWith("b")))	// need word starting with "a" or "b"
 													.filter(e -> (e.endsWith("e")))							// need word ending with "e"													
@@ -140,6 +140,21 @@ public class Ex04_ParallelStream {
 						.limit(500)
 						.collect(Collectors.toList());
 		System.out.println("Correct size="+strings.size()); // Expected outcome = 500
+		
+		/*
+		 * Well, in above code, output is as expected with usage of parallel stream. What about performance?
+		 * 
+		 * REMEMBER -
+		 * 
+		 * (1) Parallelizing a pipeline is unlikely to increase its performance if the source is from Stream.iterate, or
+		 * the intermediate stateful operations (e.g. limit) is used. In fact, stateful intermediary operations (limit,
+		 * skip, sort...) should not be used in parallel, b'cas it may even kill performance in some cases.
+		 * 
+		 * (2) Not only can parallelizing a stream lead to poor performance, including liveness failures; it can lead to
+		 * incorrect results and unpredictable behavior (safety failures). Safety failures may result from parallelizing
+		 * a pipeline that uses mappers, filters, and other programmer-supplied function objects that fail to adhere to
+		 * their specifications.
+		 */
 		
 		System.out.println("===========");
 	}

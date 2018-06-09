@@ -15,10 +15,9 @@ import java.util.Arrays;
 public class Ex_MethodReferences {
 
 	public static void main(String[] args) {
-
-		// IMPORTANT NOTE: The target type of method references (::) expression must be a functional interface
-
 		String[] stringArray = { "Robert", "Barbara", "Mary", "Michael", "John", "Patricia", "James", "Linda" };
+		
+		// IMPORTANT NOTE: The target type of method references (::) expression must be a functional interface		
 		
 		System.out.println("******************* Static method reference syntax = Class::staticMethod");
 		Runnable r = Foo::exStaticMethod;
@@ -26,7 +25,14 @@ public class Ex_MethodReferences {
 		// equivalent to:
 		r = () -> Foo.exStaticMethod();
 		r.run();
-
+		// equivalent to:
+		r = new Runnable() {
+			@Override
+			public void run() {
+				Foo.exStaticMethod();
+			}
+		};
+		r.run();
 		
 		System.out.println("******************* Instance method reference syntax = instance::instanceMethod");
 		Foo f = new Foo();
