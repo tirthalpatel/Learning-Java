@@ -42,7 +42,7 @@ public class Ex04_ParallelStream {
 	 * 
 	 * (2) Parallel reductions: use collectors instead of reduce(), b'cas it will handle parallelism and thread-safety
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		// ---------------------------------------
 		// ----------> How to use parallel stream?
@@ -77,7 +77,7 @@ public class Ex04_ParallelStream {
 		 */
 	}
 	
-	private static void createParallelStream() {
+	private static void createParallelStream() throws InterruptedException {
 		// Just assume, here data source containing a very large set of data to be processed
 		List<String> words = Arrays.asList("apple", "red", "bike", "book", "phone", "laptop", "hello", "age", "bottle", "...");
 		
@@ -85,15 +85,18 @@ public class Ex04_ParallelStream {
 		
 		// Pattern 1: Using parallelStream()
 		List<String> filteredDecoratedWords1 = words.parallelStream()
-													.unordered()											// set the ORDERED bit to 0
+													.unordered()											// set the ORDERED bit to 0													
 													.filter(e -> (e.startsWith("a") || e.startsWith("b")))	// need word starting with "a" or "b"
-													.filter(e -> (e.endsWith("e")))							// need word ending with "e"													
+													.peek(e -> System.out.println("-> " + e + " is processed in thread: " + Thread.currentThread().getName()))
+													.filter(e -> (e.endsWith("e")))							// need word ending with "e"				
+													.peek(e -> System.out.println("--> " + e + " is processed in thread: " + Thread.currentThread().getName()))
 													.map(e -> "*"+e+"*")									// decorate each word with * as prefix and suffix
-													.peek(e -> System.out.println(e + " is processed in thread: " + Thread.currentThread().getName()))
+													.peek(e -> System.out.println("---> " + e + " is processed in thread: " + Thread.currentThread().getName()))
 													.collect(Collectors.toList());			
 		
 		System.out.println(filteredDecoratedWords1);
 		System.out.println("===========");
+		Thread.sleep(500);
 		
 		// Pattern 2: Using parallel() on an existing stream
 		List<String> filteredDecoratedWords2 = words.stream()													
@@ -107,6 +110,7 @@ public class Ex04_ParallelStream {
 		
 		System.out.println(filteredDecoratedWords2);		
 		System.out.println("===========");
+		Thread.sleep(500);
 	}		
 
 	private static void tryThreadSafetyIssueInParallelStream() {

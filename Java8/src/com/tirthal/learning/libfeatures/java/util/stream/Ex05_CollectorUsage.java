@@ -10,6 +10,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
 /**
@@ -92,6 +93,22 @@ public class Ex05_CollectorUsage {
 					  													);   		
    		System.out.println("Map containing words grouping by length: " + wordsBySizeMap);
    		
+   		// The parallel equivalent of above code - ConcurrentMap<Length, List of words of the given length>   		
+   		ConcurrentMap<Integer, List<String>> wordsBySizeConcurrentMap = outputNonEmptyWords.parallelStream()
+																						   .collect(
+																						   		Collectors.groupingByConcurrent(String::length)
+																						   );   		
+   		System.out.println("Concurrent map containing words grouping by length: " + wordsBySizeConcurrentMap);
+		/*
+		 * This is called a concurrent reduction. The Java runtime performs a concurrent reduction if all of the the
+		 * following are true for a particular pipeline that contains the collect operation: (1) The stream is parallel.
+		 * (2) The parameter of the collect operation, the collector, has the characteristic
+		 * Collector.Characteristics.CONCURRENT. To determine the characteristics of a collector, invoke the
+		 * Collector.characteristics method. (3) Either the stream is unordered, or the collector has the characteristic
+		 * Collector.Characteristics.UNORDERED. To ensure that the stream is unordered, invoke the BaseStream.unordered
+		 * operation.
+		 */
+
    		// Map<Length, Total number of words of the given length>
    		Map<Integer, Long> wordsCountBySizeMap = outputNonEmptyWords.stream()   																	
    																	.collect(
@@ -100,7 +117,7 @@ public class Ex05_CollectorUsage {
    																					Collectors.counting() // the << downstream >> collector
    																			)
    																	);   																	
-		System.out.println("Map containing words grouping by length: " + wordsCountBySizeMap);
+		System.out.println("Map containing words count grouping by length: " + wordsCountBySizeMap);
 		
 		// Map<Length, List of words in upper case for the given length>
    		Map<Integer, List<String>> uppercaseWordsBySizeMap = outputNonEmptyWords.stream()
