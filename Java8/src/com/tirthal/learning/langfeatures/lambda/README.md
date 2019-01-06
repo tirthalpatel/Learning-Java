@@ -19,6 +19,7 @@
 * [Understanding Syntaxes of writing Lambda Expression](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex02_LambdaSyntaxes.java)
 * [Usage of new @FunctionalInterface annotation](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex03_FunctionalInterface.java)
 * [How to use Lambda expressions in terms of Delayed execution?](https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex04_DelayedExecution.java)
+* [What is "effectively final" variable in Java 8 and how to use it with Lambda?]((https://github.com/tirthalpatel/Learning-Java/blob/master/Java8/src/com/tirthal/learning/langfeatures/lambda/Ex05_EffectivelyFinal.java)
 
 ## Further References
 
