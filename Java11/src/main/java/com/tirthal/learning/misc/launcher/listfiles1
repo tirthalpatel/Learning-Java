@@ -1,0 +1,16 @@
+import java.nio.file.*;
+
+/**
+ * To run single-file source-code program which has file name without java extension,
+ *
+ * (1) `java <filename>` (e.g. `java listfile1 .`) : will throw exception `Caused by: java.lang.ClassNotFoundException: listfiles1`
+ *
+ * (2) `java --source 11 <filename>` (e.g. `java --source 11 listfiles1 .`) : will display files list in current directory
+ */
+public class ListFiles {
+
+    public static void main(String[] args) throws Exception {
+        Files.walk(Paths.get(args[0]))
+             .forEach(System.out::println);
+    }
+}

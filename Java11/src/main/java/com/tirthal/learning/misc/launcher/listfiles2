@@ -1,0 +1,15 @@
+#!/user/bin/java --source 11
+import java.nio.file.*;
+
+/**
+ * To run single-file source-code program as a script using ‘shebang - #!’ support,
+ *
+ * Just run as: `.listfiles2 .`
+ */
+public class ListFiles {
+
+    public static void main(String[] args) throws Exception {
+        Files.walk(Paths.get(args[0]))
+             .forEach(System.out::println);
+    }
+}
