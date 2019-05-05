@@ -2,6 +2,10 @@
 
 This project contains sample code (along with easy to understand comments) to learn new features and enhancements in Java 10.
 
+Related post is [here](https://tirthalpatel.blogspot.com/2019/05/java9-10-11-highlights-of-new-features-and-enhancements.html)
+
+__Java 10 release date__: March 2018
+
 ## How to use?
 
 Just import this project in Intellij / Eclipse as an "Existing Maven Project". If require, do necessary configuration to fix build path errors (e.g. JDK 10).
