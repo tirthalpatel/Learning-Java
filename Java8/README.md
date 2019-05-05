@@ -1,8 +1,10 @@
 # Java 8
+
 This project contains sample code (along with easy to understand comments) to learn new features and enhancements in Java 8.
 
 Related post is [here](http://tirthalpatel.blogspot.in/2015/08/java8-highlights-of-new-features-and-enhancements.html)
 
+__Java 8 release date__: March 2014
 
 ## How to use?
 
