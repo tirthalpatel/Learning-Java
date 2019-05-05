@@ -2,7 +2,9 @@
 
 This project contains sample code (along with easy to understand comments) to learn new features and enhancements in Java 11.
 
-__Java 11 GA release date__: September 25th 2018
+Related post is [here](https://tirthalpatel.blogspot.com/2019/05/java9-10-11-highlights-of-new-features-and-enhancements.html)
+
+__Java 11 LTS release date__: September 2018
 
 ## How to use?
 
